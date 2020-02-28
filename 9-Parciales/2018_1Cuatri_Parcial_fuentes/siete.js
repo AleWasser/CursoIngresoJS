@@ -9,7 +9,7 @@ function mostrar()
     };
     let varones = 0;
 
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i <= 5; i++) {
         do {
              nota = parseInt(prompt('Ingrese la nota del alumno: '));
             if(isNaN(nota) || nota < 0 || nota > 10){
@@ -21,7 +21,6 @@ function mostrar()
             sexo = prompt('Ingrese el sexo del alumno');
             if(sexo != 'f' && sexo !='m'){
                 alert('Ingrese un sexo valido');
-                break;
             }
        } while (sexo != 'f' && sexo !='m');
 
